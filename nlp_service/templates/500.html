@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oops!</title>
+	<link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+
+<style>
+.button {
+  background-color: #F5F1D2;
+  border:  1px solid grey;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+	font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+</style>
+</head>
+
+
+<body style='background-color:#FAECC9'>
+
+<h1>Ошибка 500. Что-то пошло не так...</h1>
+
+<p>Не удалось прочитать загруженный файл</p>
+<p><a href="{{ url_for('start') }}">Вернуться</a>
+
+</body>
+</html>

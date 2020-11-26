@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Рефлексия</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css">
+	<link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+<style>
+
+.mybox{
+	border: 1px solid #FAECC9;
+	width: 700px;
+	margin: auto;
+	padding: 5px 5px 5px 5px;
+	background-color: #FAECC9;
+}
+
+.button_top{
+  background-color: #F5F1D2;
+  border:  1px solid grey;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+	font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button_bottom{
+  background-color: #F5F1D2;
+  border:  1px solid grey;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+	font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
+</style>
+
+</head>
+<body background="{{ url_for('static', filename='background.png') }}" style='background-size:100%;'>
+
+
+	<header>
+	<div class="container" align="center">
+		<h2 style="font-size:40px;">Отчет об обучении (рефлексия)</h2>
+		<script type="text/javascript" src="123.js"></script>
+	</div>
+	</header>
+
+
+		<form action="{{ url_for('predict_type')}}" method="POST" align="center">
+    <p style="font-size:30px;">Чему новому Вы научились?</p>
+    <textarea name='message' rows="30" cols="110"></textarea>
+		<br/>
+		<button class="button_bottom">Отправить</button>
+		</form>
+
+
+</body>
+</html>

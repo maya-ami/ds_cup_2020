@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Персональные рекомендации</title>
+    <link rel="stylesheet" type="text">
+		<link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+
+<style>
+
+.center {
+margin: 150px;
+padding: 50px 50px;
+border: 3px solid #FAECC9;
+background-color: #FFFFFF;
+}
+
+.mybox{border: 3px solid #FAECC9;
+background-color: #FFFFFF;}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {opacity: 0.6}
+
+.button2 {
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button2:hover {opacity: 0.6}
+
+
+</style>
+
+</head>
+<body background="{{ url_for('static', filename='background_3.png') }}" style="background-size:100%">
+
+	<header>
+		<div class="w3-container" align="center">
+			<h2 style="font-size:50px;">Персональные рекомендации</h2>
+		</div>
+	</header>
+
+<br>
+		<div class="w3-container" align="center">
+			<h3 style="font-size:30px;">Прогноз Вашего архетипа с помощью ИИ</h3>
+		</div>
+
+	<div class="w3-container" align="center">
+		{% for item in types %}
+			  <p style="color:black;font-size:25px;"<b>{{ item }}</b></p>
+		{% endfor %}
+	</div>
+
+<br>
+
+	<p style="color:black;font-size:30px;text-align: center;"><b>Рекомендуемые курсы</b></p>
+	<div class="w3-container" align="center">
+		{% for link, name in courses %}
+				<p><a href="https://{{ link }}">{{ name }}</a></p>
+		{% endfor %}
+	</div>
+
+<br>
+
+<div class="w3-container" align="center">
+
+	<button class="button">Супер!</button>
+	<button class="button2">Не интересует</button>
+
+	</div>
+
+</body>
+</html>
