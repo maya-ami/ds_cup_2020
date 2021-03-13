@@ -9,34 +9,34 @@ Case by University 20.35: building a machine learning model to predict personali
 
 __Для жюри__: выжимка результатов проекта по каждому из 15 критериев оценки - [CRITERIA.md](https://github.com/maya-ami/project2035/blob/master/CRITERIA.md)
 
-## Техническая реализация представлена пошагово в файлах:
+## Solution step-by-step:
 
-- Подготовка данных - [1 Prepare Data.ipynb](https://github.com/maya-ami/project2035/blob/master/1_Prepare_Data.ipynb)
+- [1 Prepare Data.ipynb](https://github.com/maya-ami/project2035/blob/master/1_Prepare_Data.ipynb)
 
-- Работа с доп.данными - [2 Additional Data.ipynb](https://github.com/maya-ami/project2035/blob/master/2_Additional_Data.ipynb)
+- [2 Additional Data.ipynb](https://github.com/maya-ami/project2035/blob/master/2_Additional_Data.ipynb)
 
-- Генерация признаков - [3 Feature Generation.ipynb](https://github.com/maya-ami/project2035/blob/master/3_Feature_Generation.ipynb)
+- [3 Feature Generation.ipynb](https://github.com/maya-ami/project2035/blob/master/3_Feature_Generation.ipynb)
 
-- Анализ N грамм - [4 Analysing N Grams.ipynb](https://github.com/maya-ami/project2035/blob/master/4_Analysing_N_Grams.ipynb)
+- [4 Analysing N Grams.ipynb](https://github.com/maya-ami/project2035/blob/master/4_Analysing_N_Grams.ipynb)
 
-- Поиск корреляций - [5 Correlations.ipynb](https://github.com/maya-ami/project2035/blob/master/5_Correlations.ipynb)
+- [5 Correlations.ipynb](https://github.com/maya-ami/project2035/blob/master/5_Correlations.ipynb)
 
-- Модель классификации "Определение архетипа по текстовым данным" - [6 Model Classifier.ipynb](https://github.com/maya-ami/project2035/blob/master/6_Model_Classifier.ipynb)
+- Classification model to predict a personality archetype based on texts - [6 Model Classifier.ipynb](https://github.com/maya-ami/project2035/blob/master/6_Model_Classifier.ipynb)
 
-- Модель регрессии "Прогноз значений ключевых мотиваторов учащихся" - [7 Model Regressor.ipynb](https://github.com/maya-ami/project2035/blob/master/7_Model_Regressor.ipynb)
+- Regression model to predict the level of students' key motives - [7 Model Regressor.ipynb](https://github.com/maya-ami/project2035/blob/master/7_Model_Regressor.ipynb)
 
-- Создание признаков на основе тематического моделирования - [Topic Modleing.ipynb](https://github.com/maya-ami/project2035/blob/master/Topic_Modeling.ipynb)
+- Feature generation with topic modeling.[Topic Modleing.ipynb](https://github.com/maya-ami/project2035/blob/master/Topic_Modeling.ipynb)
 
-NB: для прогона ноутбуков не по порядку, скопировать сформированные промежуточные датасеты из директории `data` в корень.
-NB: протестировано только на ОС Windows.
+NB: copy dataset from `data` to your working directory or change the paths in the notebooks.
+NB: Tested on OS Windows only.
 
 ## MLaaS: NLP service
 
-Сервис определяет архетип обучающегося на основе текстов и рекомендует релевантные курсы.
+A service predicting a student's archetype and recommending relevant online courses (warning: recommendation is hard-coded! to do: create a proper recommender system for each achetype)
 
 ![](nlp_service/schema.PNG)
 
-### Запуск сервиса
+### Run
 
 ```
 cd nlp_service
@@ -44,12 +44,9 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Прототип доступен в браузере по адресу http://127.0.0.1:5000/
+The prototype is available at http://127.0.0.1:5000/
 
-NB: протестировано только на ОС Windows.
 
 ## Misc
 
-Папка `data` содержит промежуточные датасеты, сгенерированные на каждом из шагов (агрегаты, текстовые фичи и пр.)
-
-Код для ответов на вопросы анкеты - [Questionary_Answers.ipynb](https://github.com/maya-ami/project2035/blob/master/Questionary_Answers.ipynb)
+`data` contains intermediate datasets generated at each step (aggreatations, features retrieved from texts, etc).
