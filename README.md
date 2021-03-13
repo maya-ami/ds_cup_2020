@@ -1,13 +1,10 @@
 ## 1st place solution for a [data science championship 2020](https://online.innoagency.ru/datascience/)
 Case by University 20.35: building a machine learning model to predict personality traits based on textual data.
 
-## Команда НеИИ. Кейс Университет 20.35
+Ideas and results are presented in the [slides](https://github.com/maya-ami/project2035/blob/master/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F.pdf)
 
-Основные моменты решения и результаты отражены в [Презентации.pdf](https://github.com/maya-ami/project2035/blob/master/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F.pdf)
+Demo of a created NLP service (predicts a personality archetype and recommend relevant courses) - [nlp_serivce/demo.mp4](https://github.com/maya-ami/project2035/blob/master/nlp_service/demo.mp4)
 
-Демо разработанного NLP сервиса (прогноз архетипа и рекомендация релевантных курсов) - [nlp_serivce/demo.mp4](https://github.com/maya-ami/project2035/blob/master/nlp_service/demo.mp4)
-
-__Для жюри__: выжимка результатов проекта по каждому из 15 критериев оценки - [CRITERIA.md](https://github.com/maya-ami/project2035/blob/master/CRITERIA.md)
 
 ## Solution step-by-step:
 
