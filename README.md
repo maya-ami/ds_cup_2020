@@ -29,7 +29,7 @@ NB: Tested on OS Windows only.
 
 ## MLaaS: NLP service
 
-A service predicting a student's archetype and recommending relevant online courses (warning: recommendation is hard-coded! to do: create a proper recommender system for each achetype)
+A service predicting a student's archetype and recommending relevant online courses (warning: recommendations are hard-coded! to do: create a proper recommender system for each achetype)
 
 ![](nlp_service/schema.PNG)
 
