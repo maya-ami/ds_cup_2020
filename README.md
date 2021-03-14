@@ -1,4 +1,7 @@
 ## 1st place solution for a [data science championship 2020](https://online.innoagency.ru/datascience/)
+
+![](img.png)
+
 Case by University 20.35: building a machine learning model to predict personality traits based on textual data.
 
 Ideas and results are presented in the [slides](https://github.com/maya-ami/project2035/blob/master/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F.pdf).
