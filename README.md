@@ -1,9 +1,9 @@
 ## 1st place solution for a [data science championship 2020](https://online.innoagency.ru/datascience/)
 Case by University 20.35: building a machine learning model to predict personality traits based on textual data.
 
-Ideas and results are presented in the [slides](https://github.com/maya-ami/project2035/blob/master/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F.pdf)
+Ideas and results are presented in the [slides](https://github.com/maya-ami/project2035/blob/master/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F.pdf).
 
-Demo of a created NLP service (predicts a personality archetype and recommend relevant courses) - [nlp_serivce/demo.mp4](https://github.com/maya-ami/project2035/blob/master/nlp_service/demo.mp4)
+Demo of a created NLP service (predicts a personality archetype and recommend relevant courses) - [nlp_serivce/demo.mp4](https://github.com/maya-ami/project2035/blob/master/nlp_service/demo.mp4).
 
 
 ## Solution step-by-step:
@@ -22,10 +22,9 @@ Demo of a created NLP service (predicts a personality archetype and recommend re
 
 - Regression model to predict the level of students' key motives - [7 Model Regressor.ipynb](https://github.com/maya-ami/project2035/blob/master/7_Model_Regressor.ipynb)
 
-- Feature generation with topic modeling.[Topic Modleing.ipynb](https://github.com/maya-ami/project2035/blob/master/Topic_Modeling.ipynb)
+- Feature generation with topic modeling. [Topic Modleing.ipynb](https://github.com/maya-ami/project2035/blob/master/Topic_Modeling.ipynb)
 
-NB: copy dataset from `data` to your working directory or change the paths in the notebooks.
-NB: Tested on OS Windows only.
+NB: Copy datasets from `data` to your working directory or change the paths in the notebooks.
 
 ## MLaaS: NLP service
 
